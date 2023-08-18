@@ -8,14 +8,21 @@
     <script>
         //3 escopos: global, função e bloco
         //LEt preserva o escopo da variavel
-        
+        /*
         if(true) {
             let serie = 'Friends'
             console.log(serie)
         }
 
-        console.log(serie)
+        console.log(serie)*/
 
+        var serie = 'friends'
+        {
+            var serie = 'the walking dead'
+            console.log( 'dentro ' +serie)
+        }
+
+        console.log( 'fora ' +serie)
 
 
 
