@@ -16,13 +16,22 @@
 
         console.log(serie)*/
 
-        var serie = 'friends'
+       /* var serie = 'friends'
         {
             var serie = 'the walking dead'
             console.log( 'dentro ' +serie)
         }
 
-        console.log( 'fora ' +serie)
+        console.log( 'fora ' +serie) //vai sair a ultima informação dada a variavel */
+
+        let serie = 'friends'
+        {
+            let serie = 'the walking dead'
+            console.log( 'dentro ' +serie) //dentro do bloco sai de walking dead, pois preserva o contexto
+        }
+
+        console.log( 'fora ' +serie) //fora do bloco sai friends, pois preserva
+
 
 
 
