@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <script>
+    /*
+        let quadrado = function(x = 5) {
+            return x * x
+        }
+
+        as duas anotações são equivalentes,  essa é uma formad e criar funções mais rapidamente
+*/ 
+      /*  let quadrado = (x) => {
+            return x*x
+        }
+        //não é obrigatorio colocar () se for só uma condição, mas se for duas por exemplo x, y é obrigatorio ()
+
+        */
+       // let quadrado = x =>  x*x //return implicito
+        
+
+
+      //  document.write( quadrado (3) )
+/*
+        let parOuImpar = function(numero) {
+            
+            if(numero % 2 === 0) {
+                return 'par'
+            } else {
+                return 'impar'
+            }
+        }
+        */
+
+        // por ter um if, não dá p reduzir mais
+       /* let parOuImpar = numero => {
+            
+            if(numero % 2 === 0) {
+                return 'par'
+            } else {
+                return 'impar'
+            }
+        }
+
+        */
+//a minima
+        let parOuImpar = numero => numero % 2 === 0 ?'par ' : 'impar' //retorno implicito
+      
+
+        document.write(parOuImpar(155))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
