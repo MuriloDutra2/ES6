@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <script>
+   //um software de marcenaria
+   //cadeira e sofa
+
+   //paradigma procedura
+
+   //cadeira
+
+   let qtde_pernas = 4
+   let giratoria = false
+   let cor = 'azul'
+
+
+    //array de cadeiras
+    let cadeiras = Array()
+
+    cadeiras[0] = Array()
+    cadeiras[0]['qtde_pernas'] = 4
+    cadeiras[0]['giratoria'] = false
+    cadeiras[0]['cor'] = 'azul'
+
+    
+    cadeiras[1] = Array()
+    cadeiras[1]['qtde_pernas'] = 1
+    cadeiras[1]['giratoria'] = true
+    cadeiras[1]['cor'] = 'vermelha'
+
+    console.log(cadeiras)
+
+
+   function girar_cadeira(indice) {
+    if(cadeiras[indice]['giratoria'] === true) {
+        console.log('girou')
+    }else {
+        console.log('cadeira não é giratoria')
+    }
+   }
+
+   function adicionar_cadeira(qtde_pernas, giratoria, cor){
+    let cadeira = Array()
+
+    cadeira['qtde_pernas'] = qtde_pernas
+    cadeira['giratoria'] = giratoria
+    cadeira['cor'] = cor
+
+    cadeiras.push(cadeira)
+   }
+
+   
+
+   adicionar_cadeira(3, false, 'verde')
+
+   console.log(cadeiras)
+  
+   girar_cadeira(1)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
