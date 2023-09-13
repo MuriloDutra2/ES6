@@ -62,7 +62,7 @@
    //girar_cadeira(1)
 
    //paradigmas de OO
-
+/*
    class Cadeira {
     constructor(qtde_pernas, giratoria, cor){
         this.qtde_pernas = qtde_pernas
@@ -87,6 +87,34 @@
   
    console.log(cadeiras)
    cadeiras.girarCadeira
+*/
+   //Desafio Sofa
+
+   class Sofa {
+    constructor(assentos, cor, cama) {
+        this.assentos = assentos
+        this.cor = cor
+        this.cama = cama
+    }
+    transformarSofaEmCama() {
+        if(this.cama === 'true') {
+            console.log('Este sofa pode virar uma cama')
+        } else {
+            console.log('Esse sofá não pode virar uma cama')
+        }
+    }
+   }
+
+   let sofas = Array()
+   sofas.push(new Sofa(3, 'azul', false))
+   sofas.push(new Sofa(2, 'vermelho', true))
+
+   console.log(sofas)
+   console.log(sofas.transformarSofaEmCama())
+
+
+
+   
 
    
 
