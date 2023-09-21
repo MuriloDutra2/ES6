@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <script>
+        
+      let nome = 'Murilo'
+      let idade = 16
+      let sexo = 'Masculino'
+      let profissao = 'vendedor de salada de fruta'
+
+      let objeto = {
+        nome: nome,
+        idade: idade,
+        sexo: sexo,
+        profissao: profissao,
+        exebirResumo: function() {
+            console.log(`${this.nome}, ${this.idade}, ${this.sexo}, ${this.profissao}`);
+        }
+      }
+
+      console.log(objeto)
+      objeto.exebirResumo()
+
+      let objeto2 = { //da pra reduzir usando apenas o noe da variavel
+        nome,
+        idade,
+        sexo,
+        profissao,
+        exebirResumo() { //isso é uma função passada diretamente
+            console.log(`${this.nome}, ${this.idade}, ${this.sexo}, ${this.profissao}`);
+        }
+      }
+
+      console.log(objeto2)
+      objeto2.exebirResumo()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
